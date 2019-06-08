@@ -1,0 +1,33 @@
+★테이블태그
+<table></table>
+-행row
+-열column
+
+-colspan 좌우합치기
+-rowspan 위아래합치기
+
+tr
+td column=data
+
+tfoot -잘안쓴다
+
+★링크태그
+href
+
+★공간분할태그를 익힌다
+
+★미디어태그
+
+
+https://search.naver.com/search.naver?  = 서버주소
+
+sm=top_hty&fbm=1&ie=utf8&query=%EB%A9%95%EC%8B%9C%EC%BD%94
+=입력값
+
+submit 찾기버튼
+
+button 버튼- 따로 입력해줘야함
+
+
+label for 과 id를 동일하게 연결할 수 있다
+
