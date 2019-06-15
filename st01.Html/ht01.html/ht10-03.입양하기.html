@@ -1,23 +1,57 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>내가 처음 만드는 HTML 문서</title>
     <style>
+        /* 태그 찾기 { 태그 설정 } */
+        header {
+            height: 70px;
+            background-color: #f46075;
+        }
+
+        footer {
+            height: 50px;
+            background-color: darkgray;
+            text-align: center;
+            line-height: 3;
+        }
+
+        article {
+            border: 1px gray solid;
+            width: 400px;
+        }
+
+        #u1 {
+            list-style: none;
+        }
+
+        .c2 {
+            display: inline-block;
+        }
+
+
     </style>
 </head>
+
 <body>
+    <header>
         <h1>입양하기</h1>
+    </header>
 
-        <ul>
-            <li><a href="#">애완견 종류</a></li>
-            <li><a href="#">입양하기</a></li>
-            <li><a href="#">건강돌보기</a></li>
-            <li><a href="#">더불어살기</a></li>
+    <nav>
+        <ul id="u1">
+            <li class="c2"><a href="#">애완견 종류</a></li>
+            <li class="c2"><a href="#">입양하기</a></li>
+            <li class="c2"><a href="#">건강돌보기</a></li>
+            <li class="c2"><a href="#">더불어살기</a></li>
         </ul>
-
+    </nav>
+    <section>
+        <article>
             <h2>강아지 용품 준비하기</h2>
-            <ul>
+            <ul id="u2">
                 <li>강아지 집 </li>
                 <li>강아지 먹이 </li>
                 <li>밥그릇, 물병 </li>
@@ -28,7 +62,11 @@
                 <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
                 <li>샴푸, 린스, 애견용 타올 </li>
             </ul>
-
+        </article>
+    </section>
+    <footer>
         <p>Copyright 2012 funnycom</p>
+    </footer>
 </body>
+
 </html>
