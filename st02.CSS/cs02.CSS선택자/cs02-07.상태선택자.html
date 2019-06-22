@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>상태선택자</title>
     <style>
         /* 블락 태그를 인라인으로 바꾸는 방법
-           1. display 를 이용하는 방법
-           2. float를 이용하는 방법
+           1. float를 이용하는 방법
+           2. display 를 이용하는 방법
         */
-        
+
         /* 브라우저 스타일 초기화 */
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+
+        li {
+            list-style-type: none;
+            float: left;
+            background-color: brown;
+            width: 60px;
+            height: 30px;
+
+        }
+
+        li:nth-child(even) {
+            background-color: coral;
+        }
+        li:first-child {background-color: aquamarine;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+
+
+        }
+        li:last-child {background-color: lightgoldenrodyellow;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+
+
+        }
     </style>
 </head>
+
 <body>
     <pre>
         블락 태그를 인라인으로 바꾸는 방법
@@ -23,7 +60,8 @@
         
         상태 선택자를 사용하여 그림처럼 style을 설정하시오.
         해야할 일
-            1. li 수평으로 출력되게
+            0. li의 기호없애기
+            1. li 수평으로 출력되게 -> float와 display를 이용하는 방법
             2. li에 배경색 넣기
             3. 홀수, 짝수 처리
             4. 첫번째 li 태그를 찾고 라운드 처리
@@ -40,4 +78,5 @@
         <li>8번째</li>
     </ul>
 </body>
-</html>
+
+</html>

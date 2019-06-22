@@ -3,7 +3,34 @@
 
 <head>
     <title>상태선택자</title>
+
+    <style>
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightsalmon;
+        }
+
+        /* 배수로도 사용 할 수 있다
+
+        tr:nth-child(3n) {
+            background-color: lightgray;
+        }
+
+        tr:nth-child(3n+1) {
+            background-color: lightgray;
+        }
+
+        tr:nth-child(3n+2) {
+            background-color: lightgray;
+        }
+        */
+    </style>
+
 </head>
+
 <body>
     <table>
         <tr>
@@ -37,4 +64,4 @@
     </table>
 </body>
 
-</html>
+</html>

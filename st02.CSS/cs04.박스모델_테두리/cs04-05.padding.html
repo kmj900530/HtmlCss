@@ -1,22 +1,58 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>padding 실습</title>
+    <style>
+        /*css초기화*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            width: 200PX;
+            height: auto;
+            background: lightgreen;
+            display: inline-block;
+            margin: 15px;
+            color: white;
+        }
+
+
+        div.box1 {
+            padding: 10px 30px 10px 30px;
+        }
+
+        div>p {
+            background: #0094ff;
+        }
+
+        div.box2 {
+            padding: 10px 30px;
+        }
+        div.box3 {
+            padding: 10px;
+        }
+    </style>
+
 </head>
+
 <body>
     <div>
-        패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.
+        <p>패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</p>
     </div>
     <div class="box1">
-        패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.
+        <p>패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</p>
     </div>
     <div class="box2">
-        패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.
+        <p>패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</p>
     </div>
     <div class="box3">
-        패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.
+        <p>패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</p>
     </div>
 
 </body>
-</html>
+
+</html>

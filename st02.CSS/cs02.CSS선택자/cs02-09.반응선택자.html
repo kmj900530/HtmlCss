@@ -11,7 +11,11 @@
             visited : 폰트 색깔을 pink   로 
             link    : 폰트 색깔을 orange 로
         */
-
+        h1:hover {color: red;}
+        a:hover {color: red;}
+        a:visited {color: pink;}
+        a:link {color: orange;}
+        
         /* 
         input 태그에 focus 가 있으면 배경색이 노란색이 되도록 만드시오
         input 태그에 disabled가 설정되면 배경색이 회색이 되도록 만드시오.
@@ -19,9 +23,12 @@
         */
 
         /* input 태그에 disabled 속성이 설정되어 있으면 배경색이 회색이 되도록 만드시오. */
-
+        input[disabled] {background-color: gray;}
         /* input 태그에 checked가 설정되면 테두리(border, outline)를 만드시오. */
 
+        input:focus {background-color: yellow;}
+
+        input[checked] {border:1px dotted #ff0000;}
     </style>
 </head>
 <body>
@@ -62,4 +69,4 @@ input 태그에 checked가 설정되면 테두리를 만드시오
     </pre>
     <input type="checkbox" name="" checked />
 </body>
-</html>
+</html>
