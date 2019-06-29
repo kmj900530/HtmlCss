@@ -2,6 +2,20 @@
 <html>
 <head>
     <title>text-overflow</title>
+    <style>
+        div.a {
+            width: 100px;
+            border: 2px solid green;
+            overflow: hidden; /*태그의 영역을 벗어나는 것은 감추게*/
+            white-space:nowrap; /*줄바꿈이 있으면 어떻게 처리할 것인가?*/
+            text-overflow:ellipsis; /*텍스트가 영역을 벗어날 때 축약기호 표시*/
+                       
+        }
+        div.a:hover {
+            overflow:visible;
+            width: 360px;
+        }
+    </style>
 </head>
 <body>
     <h1>The text-overflow</h1>

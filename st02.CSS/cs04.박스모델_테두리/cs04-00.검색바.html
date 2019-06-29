@@ -3,13 +3,56 @@
 <head>
     <meta charset="utf-8">
     <title>둥근 검색 바 만들기</title>
+
+    <style>
+        /*
+        1.왼쪽의 둥근 테두리 만들기
+        2.오른쪽의 둥근 테두리 만들기
+        3.들여쓰기
+        4.infut태그에 focus시 생기는 테두리 없애기
+        5.벌어진 공간 붙이기
+        6.검색창 폰트 아래로만들기?
+        */
+
+        * {margin:0; padding:0;}
+
+
+        form {width:400px;}
+
+        .input-search {
+            border-top-left-radius:30px;
+            border-bottom-left-radius:30px;
+            padding-left:25px;
+            height:50px;
+            width:264px;
+            float:left;
+            outline:none;
+            border-style:solid; 
+            border-color: gray;
+            border-width:1px;
+            border: 1px solid gray;
+  
+        }
+        .input-search-submit {
+            border-top-right-radius:30px;
+            border-bottom-right-radius:30px;
+            outline:none;
+            height:52px;
+            width:107px;
+            margin-left:-1px;
+            border: 1px solid gray;
+            font-size:26px;
+            font-family: "바른고딕";
+        }
+
+    </style>
 </head>
 <body>
     <pre>
         아래 그림 처럼 검색바를 만드시오.
     </pre>
 
-    <div class="search-bar" style="margin-left: 50px;">
+    <div class="search-bar" style="margin-left: 45px;">
         <form>
             <input type="text" class="input-search" />
             <input type="submit" class="input-search-submit" value="검색" />

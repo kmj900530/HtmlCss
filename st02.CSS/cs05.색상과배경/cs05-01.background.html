@@ -1,9 +1,92 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>배경 이미지</title>
+
+    <style>
+        div#color {
+            background-color: yellow;
+        }
+
+        div#color>div {
+            background-color: white;
+            border: 1px solid black;
+            width: calc(100% - 50px);
+        }
+
+        div#clip>div.bg1 {
+            background-clip:border-box;
+            background-color: bisque;
+            padding: 30px;
+            border: 20px dotted black;
+            width: 200px;
+            float: left;
+            margin: 5px;
+        }
+
+        div#clip>div.bg2 {
+            background-clip:padding-box;
+            border: 20px dotted black;
+            background-color: bisque;
+            width: 200px;
+            float: left;
+            margin: 5px;
+            padding: 30px;
+        }
+
+        div#clip>div.bg3 {
+            background-clip:content-box;
+            background-color: bisque;
+            border: 20px dotted black;
+            float: left;
+            width: 200px;
+            margin: 5px;
+            padding: 30px;
+        }
+
+        div::after {
+            clear: both;
+        }
+
+        div#clip::after {
+            clear:both; display:block; content:'';
+        }
+
+        div#origin>div.bg1 {
+            background-origin: border-box;
+            border: 20px solid pink;
+            float: left;
+            width: 200px;
+            padding: 30px;
+        }
+        div#origin>div.bg2 {
+            background-origin: padding-box;
+            background-color: white;
+            border: 20px solid  pink;
+            float: left;
+            width: 200px;
+            padding: 30px;
+        }
+        div#origin>div.bg3 {
+            background-origin: content-box;
+            background-color: white;
+            border: 20px solid  pink;
+            float: left;
+            width: 200px;
+            padding: 30px;
+        }
+        div::after {
+            clear: both;
+        }
+
+        div#origin::after {
+            clear:both; display:block; content:'';
+        }
+    </style>
 </head>
+
 <body>
 
     <div id="color">
@@ -13,10 +96,10 @@
             <p>초콜릿은 카카오 콩을 재료로 가공한 식품이다.
                 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
                 설탕 등의 다른 재료를 더 넣어 만들기도 한다.
-            카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
+                카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
         </div>
     </div>
-        
+
     <div id="clip">
         <h2>background-clip</h2>
         <div class="bg1">
@@ -45,7 +128,7 @@
                 잘 알려져 있듯이 블루베리와 함께 대표적인 항산화 음식이기도 하다.
             </p>
         </div>
-    </div> <!--  <--- ::after  --> 
+    </div> <!--  <--- ::after  -->
 
     <div id="origin">
         <h2>background-origin</h2>
@@ -85,7 +168,7 @@
                 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와
                 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
                 설탕 등의 다른 재료를 더 넣어 만들기도 한다.
-            카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
+                카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
         </div>
         <div class="bg2">
             <h1>초콜릿(Chocolate)</h1>
@@ -129,4 +212,5 @@
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
 </body>
-</html>
+
+</html>

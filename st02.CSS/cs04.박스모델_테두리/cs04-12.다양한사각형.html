@@ -1,13 +1,114 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>박스모델</title>
+
+    <style>
+
+        div#borderstyle>div {
+            width: 200px;
+            height:100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            margin: 20px;
+            float:left; 
+        }
+        div#borderstyle::after {
+            clear: both;
+            display: block;
+        }
+        div#borderstyle>div.box1 {
+            border:solid;
+        }
+        div#borderstyle>div.box2 {
+            border:dotted;
+        }
+        div#borderstyle>div.box3 {
+            border:dashed;
+        }
+        div#borderstyle>div.box4 {
+            border-top:solid;
+            border-right:dotted;
+            border-bottom:dashed;
+            border-left:double;
+        }
+
+
+
+        div#bordercolor>div {
+            width: 200px;
+            height:100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            margin: 20px;
+            float:left; 
+        }
+        div#bordercolor::after {
+            clear: both;
+            display: block;
+        }
+        div#bordercolor>div.box1 {
+            border-color: red;
+        }
+        div#bordercolor>div.box2 {
+            border-color: blue;
+        }
+        div#bordercolor>div.box3 {
+            border-color: blue yellow;
+        }
+        div#bordercolor>div.box4 {
+            border-color:
+            border-top:2px dotted blueviolet;
+            border-right:2px dotted yellow;
+            border-bottom:2px dotted deepskyblue;
+            border-left:2px dotted darkred;
+        }   
+        
+
+
+        div#borderwidth>div {
+            width: 200px;
+            height:100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            margin: 20px;
+            float:left; 
+        }
+        div#borderwidth::after {
+            clear: both;
+            display: block;
+        }
+        div#borderwidth>div.box1 {
+            border-width: 2px;
+        }
+        div#borderwidth>div.box2 {
+            border-width: 3px 5px;
+        }
+        div#borderwidth>div.box3 {
+            border-top-width: 3px;
+            border-right-width: 5px;
+            border-bottom-width: 3px;
+            border-left-width: 5px;
+        }
+        div#borderwidth>div.box4 {
+            border-width: 5px 10px 15px 20px;
+        }
+        div#borderwidth>div.box5{
+            border:solid black;
+            border-top:5px;
+            border-right: 10px;
+            border-bottom: 15px;
+            border-left: 20px;
+        }
+    </style>
 </head>
+
 <body>
     <div id="borderstyle">
         <h2>border style</h2>
-        <div class="box1"> solid  </div>
+        <div class="box1"> solid </div>
         <div class="box2"> dotted </div>
         <div class="box3"> dashed </div>
         <div class="box4"> 4면이 다른 border style</div>
@@ -15,20 +116,21 @@
 
     <div id="bordercolor">
         <h2>border color</h2>
-        <div class="box1"> </div>
-        <div class="box2"> </div>
-        <div class="box3"> </div>
-        <div class="box4"> </div>
+        <div class="box1">레드</div>
+        <div class="box2">블루</div>
+        <div class="box3">2가지</div>
+        <div class="box4">사방</div>
     </div>
 
     <div id="borderwidth">
         <h2>border width</h2>
-        <div class="box1"> </div>
-        <div class="box2"> </div>
-        <div class="box3"> </div>
-        <div class="box4"> </div>
-        <div class="box5"> </div>
+        <div class="box1">얇게</div>
+        <div class="box2">굵게1</div>
+        <div class="box3">굵게2</div>
+        <div class="box4">사방</div>
+        <div class="box5">사방</div>
     </div>
 
 </body>
-</html>
+
+</html>
