@@ -3,6 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>display 속성</title>
+
+    <style>
+        div#container>div{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 5px;
+        }
+        .ex1 {
+            background-color: darkturquoise;
+        }
+        .ex2 {
+            background-color: palegreen;
+        }
+        .ex3 {
+            background-color: papayawhip;
+        }
+
+        div#container{
+            display: flex;
+        }
+
+    </style>
 </head>
 <body>
     <div id="container">
@@ -11,4 +35,4 @@
         <div class="ex3">세번째</div>
     </div>
 </body>
-</html>
+</html>

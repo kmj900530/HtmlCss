@@ -1,15 +1,59 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>배경 스타일</title>
+
+	<style>
+		div {
+			width: 650px;
+			height: 500px;
+		}
+
+		div.container {
+			padding: 5px;
+			background-image: url(../images/apple-bg.jpg);
+			background-repeat: no-repeat;
+			width: 640px;
+			height: 425px;
+			border: 1px black solid;
+		}
+
+		div.container>div.content {
+			margin: 40px;
+		}
+
+		h1 {
+			background-color: rgba(255, 255, 255, 0.5);
+			height: 50px;
+			width: 550px;
+			margin: 350px 0 0 0;
+		}
+
+		/* div.content
+		{
+			width:80%;
+			height:60px;
+			background-color: rgba(255, 255, 255, 0.5);
+			margin: auto;
+			line-height: 3;
+			margin-top:350px;
+		} 
+			div.content > h1{
+				font-size:20px;
+				text-align: center;
+				}
+		*/
+	</style>
 </head>
+
 <body>
 	<!-- background-image를 이용하여 배경 이미지 추가 -->
 	<div class="container">
-	    <div class="content">
-	        <h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
-	    </div>
+		<div class="content">
+			<h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
+		</div>
 	</div>
 
 	<pre>
@@ -19,4 +63,5 @@
 		3. position 을 사용하여 위치 지정하기.
 	</pre>
 </body>
-</html>
+
+</html>
